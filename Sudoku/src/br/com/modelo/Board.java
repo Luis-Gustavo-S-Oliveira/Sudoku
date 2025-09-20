@@ -14,6 +14,7 @@ public class Board {
         this.board = board;
     }
 
+
     
     public List<List<Espaco>> getBoard() {
         return board;
@@ -25,10 +26,7 @@ public class Board {
 
     public EstadoJogo verificarEstadoJogo(){
         if(board.stream().flatMap(Collection::stream)
-        .noneMatch(s -> !s.isFixo() && s.getValor() == null)){
-            return EstadoJogo.NAO_INICIADO;
-           
-        }
+        .noneMatch(s -> !s.isFixo() && s.getValor() == null)){return EstadoJogo.NAO_INICIADO;}
         return board.stream().flatMap(Collection::stream)
         .anyMatch(s -> isNull(s.getValor())) ? EstadoJogo.EM_ANDAMENTO : EstadoJogo.COMPLETO;
     }

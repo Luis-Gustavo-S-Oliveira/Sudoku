@@ -6,8 +6,8 @@ public class Espaco {
     private final int esperado;
     private final boolean fixo;
     
-    public Espaco(int exeperado, boolean fixo) {
-        this.esperado = exeperado;
+    public Espaco(int esperado, boolean fixo) {
+        this.esperado = esperado;
         this.fixo = fixo;
         if (fixo){
             this.valor = esperado;
