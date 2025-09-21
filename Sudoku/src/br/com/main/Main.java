@@ -19,9 +19,7 @@ public class Main {
 
     private final static int TAMANHO_BOARD = 9;
     public static void main(String[] args) {
-        if(args.length == 0){
-            System.out.println("Nao foi passado nenhum argumento no args");
-        }
+
         final Map<String, String> positions = Stream.of(args)
                 .collect(toMap(
                         k -> k.split(";")[0],
