@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 
 
 public class Main {
+///  feito para rodar o sudoku exclusivamente no terminal
     private final static Scanner scan = new Scanner(System.in);
 
     private static Board board;

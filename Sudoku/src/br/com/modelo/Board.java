@@ -60,6 +60,10 @@ public class Board {
         return true;
     }
 
+    public void naoFazernada(){
+        System.out.println("Nao fazer nada");
+    }
+
     public void reset(){
         board.forEach(s -> s.forEach(Espaco::limparEspaco));
     }
